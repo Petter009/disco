@@ -14,13 +14,12 @@ namespace Disco
 
         static void Main(string[] args)
         {
-
             DiscoOpen();
         }
 
         static void DiscoOpen()
         {
-            for (int i = 0; i < 50; i++)
+            for (int i = 0; i < 30; i++)
             {
                 Thread guestThread = new Thread(GuestStuff);
                 guestThread.Name = (i + 1).ToString();
